@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolute Config</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="user-account">
+                User account
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search bar">
+            </div>
+            <div class="tabs" id="tabs">
+                <div class="tab" id="tabButton1">
+                    <button onclick="showTab('tab1')">Tab 1</button>
+                    <button class="delete-tab" onclick="deleteTab('tab1', 'tabButton1')">&times;</button>
+                </div>
+            </div>
+            <button class="new-tab" onclick="addNewTab()">+ new tab</button>
+        </div>
+        <div class="content" id="content">
+            <div id="tab1" class="tab-content active">
+                <div class="header">Tab 1</div>
+                <label for="f11key1">F11 Output Key:</label>
+                <input type="text" id="f11key1" maxlength="1">
+                <br>
+                <label for="f12key1">F12 Output Key:</label>
+                <input type="text" id="f12key1" maxlength="1">
+                <br>
+                <button onclick="startHook(1)">Start Hook</button>
+                <button onclick="stopHook(1)">Stop Hook</button>
+            </div>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

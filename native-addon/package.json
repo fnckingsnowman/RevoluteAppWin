@@ -1,0 +1,10 @@
+{
+    "name": "native-addon",
+    "version": "1.0.0",
+    "description": "Native addon for Electron app",
+    "main": "addon.node",
+    "gypfile": true,
+    "dependencies": {
+        "nan": "^2.20.0"
+    }
+}
