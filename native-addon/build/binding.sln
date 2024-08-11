@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "addon", "addon.vcxproj", "{96070BB7-13B3-5B08-4761-FF4FBA0F0D41}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "addon", "addon.vcxproj", "{F7225F53-13C5-53BB-531D-0ACD0D9A38C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,10 +8,10 @@ Global
 		Debug|x64 = Debug|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{96070BB7-13B3-5B08-4761-FF4FBA0F0D41}.Release|x64.ActiveCfg = Release|x64
-		{96070BB7-13B3-5B08-4761-FF4FBA0F0D41}.Release|x64.Build.0 = Release|x64
-		{96070BB7-13B3-5B08-4761-FF4FBA0F0D41}.Debug|x64.ActiveCfg = Debug|x64
-		{96070BB7-13B3-5B08-4761-FF4FBA0F0D41}.Debug|x64.Build.0 = Debug|x64
+		{F7225F53-13C5-53BB-531D-0ACD0D9A38C2}.Release|x64.ActiveCfg = Release|x64
+		{F7225F53-13C5-53BB-531D-0ACD0D9A38C2}.Release|x64.Build.0 = Release|x64
+		{F7225F53-13C5-53BB-531D-0ACD0D9A38C2}.Debug|x64.ActiveCfg = Debug|x64
+		{F7225F53-13C5-53BB-531D-0ACD0D9A38C2}.Debug|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

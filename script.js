@@ -1,4 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
+
+
+//document.addEventListener('DOMContentLoaded', () => {
+
+
     let tabCounter = 1;
 
     // Function to show a specific tab
@@ -61,7 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial tab is shown by default
     showTab('tab1');
-});
+//});
+
+    // Function to open a tab window
+    
 
 // Functions to start and stop the hook
 function startHook(tabNumber) {
@@ -75,3 +82,30 @@ function startHook(tabNumber) {
 function stopHook(tabNumber) {
     window.electronAPI.stopHook();
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    showTab('tab1');
+});
+
+
+
+
+
+
+
+
+
+
+/*
+//loading screen thing ignore
+
+window.addEventListener(load, () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild("loader");
+    })
+})*/
