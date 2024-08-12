@@ -1,5 +1,10 @@
 /* styles.css */
 
+:root{
+    --hoverColor: #a6acf5;
+    --contentBackgroundColor:#cbcdbc;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -30,7 +35,7 @@ body {
 .search-bar input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #4b4e79;
+    border: 1px solid #7479bd;
     box-sizing: border-box;
 }
 
@@ -50,19 +55,19 @@ body {
 .tab button {
     flex-grow: 1;
     padding: 10px;
-    border: 1px solid #4b4e79;
+    border: 1px solid #7479bd;
     box-sizing: border-box;
     cursor: pointer;
-    background-color: #4b4e79;
+    background-color: #7479bd;
 }
 
 .tab button:hover {
-    background-color: #7479bd;
+    background-color: var(--hoverColor);
 }
 
 .delete-tab {
     background-color: red;
-    color: #4b4e79;
+    color: #7479bd;
     border: none;
     cursor: pointer;
     padding: 0 10px;
@@ -79,11 +84,11 @@ body {
     border: 1px solid #000;
     box-sizing: border-box;
     cursor: pointer;
-    background-color: #f1f1f1;
+    background-color: #7479bd;
 }
 
 .new-tab:hover {
-    background-color: #e1e1e1;
+    background-color: var(--hoverColor);
 }
 
 .content {
@@ -91,6 +96,7 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    background-color: var(--contentBackgroundColor);
 }
 
 .tab-content {
@@ -113,15 +119,9 @@ body {
     margin-bottom: 10px;
 }
 
-.circle {
-    width: 200px;
-    height: 200px;
-    border: 1px solid #000;
-    border-radius: 50%;
-}
 
 .tab button.active {
-    background-color: #dcdcdc;
+    background-color: #d23636;
 }
 
 
