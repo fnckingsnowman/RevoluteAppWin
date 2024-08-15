@@ -124,45 +124,36 @@ body {
     background-color: #d23636;
 }
 
-
-/*
-
-//loading screen thing ignore
-.loader{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f1f1f1;
-    transition: opacity 0.75s, visibility 0.75s;
+.title {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #cbcdbc;
 }
 
-.loader-hidden{
-    opacity: 0;
-    visibility: hidden;
+.BLE-connectButton{
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #7479bd;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #7479bd;
 }
 
-.loader::after{
-    content: "";
-    width: 75px;
-    height: 75px;
-    border: 15px solid #dcdcdc;
-    border-top-color:aqua;
-    border-radius: 50%;
-    animation: loading 0.75s ease infinite;
+.BLE-connectButton:hover{
+    background-color: var(--hoverColor);
 }
 
-@keyframes loading{
-    from{
-        transform: rotate(0turn);
-    }
-    to{
-        transform: rotate(1turn);
-    }
+.BLE-disconnectButton{
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #7479bd;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #7479bd;
 }
 
-*/
+.BLE-disconnectButton:hover{
+    background-color: var(--hoverColor);
+}
+
+

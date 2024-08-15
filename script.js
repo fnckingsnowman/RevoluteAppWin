@@ -66,8 +66,6 @@
     // Initial tab is shown by default
     showTab('tab1');
 //});
-
-    // Function to open a tab window
     
 
 // Functions to start and stop the hook
@@ -84,10 +82,16 @@ function stopHook(tabNumber) {
 }
 
 
+let scannedDevices = {};
+
+function showBLEDevices() {
+    showTab('bleDevices');
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
     showTab('tab1');
 });
-
 
 
 
