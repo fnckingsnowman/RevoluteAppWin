@@ -9,8 +9,5 @@
     "dependencies": {
         "@abandonware/noble": "^1.9.2-25",
         "electron": "^30.0.9"
-    },
-    "devDependencies": {
-        "electron-rebuild": "^3.2.8"
     }
 }

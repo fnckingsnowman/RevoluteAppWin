@@ -7,21 +7,17 @@ contextBridge.exposeInMainWorld('electronAPI', {
     setF12Key: (key) => ipcRenderer.send('set-f12-key', key)
 });
 
-document.getElementById('bleDevices').innerHTML = '';
+//BLE features
 
-window.electronAPI.onDeviceDiscovered((device) => {
-    const devicesList = document.getElementById('devicesList');
-    const listItem = document.createElement('li');
-    listItem.textContent = `${device.name} (${device.id})`;
-    devicesList.appendChild(listItem);
+const startScanButton = document.getElementById('start-scan');
+const idsList = document.getElementById('ids-list');
+
+startScanButton.addEventListener('click', () => {
+  ipcRenderer.send('start-ble-scan');
 });
 
-function showBLEDevices() {
-    showTab('bleDevices');
-    window.electronAPI.startBLEScan(); // Start scanning for BLE devices when showing the BLE tab
-}
-
-// Call this function when you want to stop scanning, for example, when the user switches tabs
-function stopBLEScan() {
-    window.electronAPI.stopBLEScan(); // Stop scanning for BLE devices
-}
+ipcRenderer.on('ble-device-id', (event, id) => {
+  const listItem = document.createElement('li');
+  listItem.textContent = id;
+  idsList.appendChild(listItem);
+});

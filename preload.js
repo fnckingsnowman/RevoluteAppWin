@@ -7,12 +7,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
     setF12Key: (key) => ipcRenderer.send('set-f12-key', key),
 
 
-        startBLEScan: () => ipcRenderer.send('start-ble-scan'),
-        stopBLEScan: () => ipcRenderer.send('stop-ble-scan'),
-        onDeviceDiscovered: (callback) => ipcRenderer.on('ble-device-discovered', (event, device) => {
-            callback(device);
-    })
-    
+
 
     // New method for BLE device discovery
 
