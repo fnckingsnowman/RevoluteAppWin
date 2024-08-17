@@ -2,9 +2,7 @@
 
 //document.addEventListener('DOMContentLoaded', () => {
 
-
     let tabCounter = 1;
-
     // Function to show a specific tab
     function showTab(tabId) {
         document.querySelectorAll('.tab-content').forEach(tab => {
@@ -16,7 +14,6 @@
         document.getElementById(tabId).classList.add('active');
         document.querySelector(`button[data-tab="${tabId}"]`).classList.add('active');
     }
-
     // Function to add a new tab
     window.addNewTab = function() {
         tabCounter++;
@@ -31,7 +28,6 @@
             <button class="delete-tab" onclick="deleteTab('${tabId}', '${tabButtonId}')">&times;</button>
         `;
         document.getElementById('tabs').appendChild(newTabButton);
-
         const newTabContent = document.createElement('div');
         newTabContent.id = tabId;
         newTabContent.className = 'tab-content';
@@ -47,10 +43,8 @@
             <button onclick="stopHook(${tabCounter})">Stop Hook</button>
         `;
         document.getElementById('content').appendChild(newTabContent);
-
         showTab(tabId);
     };
-
     // Function to delete a tab
     window.deleteTab = function(tabId, tabButtonId) {
         document.getElementById(tabId).remove();
@@ -62,14 +56,10 @@
             showTab(firstTab.id);
         }
     };
-
     // Initial tab is shown by default
     showTab('tab1');
 //});
-
-    // Function to open a tab window
     
-
 // Functions to start and stop the hook
 function startHook(tabNumber) {
     const f11Key = document.getElementById(`f11key${tabNumber}`).value;
@@ -78,11 +68,14 @@ function startHook(tabNumber) {
     window.electronAPI.setF12Key(f12Key);
     window.electronAPI.startHook();
 }
-
 function stopHook(tabNumber) {
     window.electronAPI.stopHook();
 }
 
+let scannedDevices = {};
+function showBLEDevices() {
+    showTab('bleDevices');
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     showTab('tab1');
@@ -95,16 +88,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
 /*
 //loading screen thing ignore
-
 window.addEventListener(load, () => {
     const loader = document.querySelector(".loader");
-
     loader.classList.add("loader-hidden");
-
     loader.addEventListener("transitionend", () => {
         document.body.removeChild("loader");
     })

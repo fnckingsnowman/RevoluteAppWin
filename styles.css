@@ -124,6 +124,22 @@ body {
     background-color: #d23636;
 }
 
+.title {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #cbcdbc;
+}
+.BLE-connectButton{
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #7479bd;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #7479bd;
+}
+.BLE-connectButton:hover{
+    background-color: var(--hoverColor);
+}
 
 /*
 
