@@ -4,13 +4,13 @@
     "description": "An Electron app with a native addon",
     "main": "main.js",
     "scripts": {
-      "start": "electron ."
+        "start": "electron ."
     },
     "dependencies": {
-      "electron": "^30.0.9"
+        "@abandonware/noble": "^1.9.2-25",
+        "electron": "^30.0.9"
     },
     "devDependencies": {
-      "electron-rebuild": "^3.2.8"
+        "electron-rebuild": "^3.2.8"
     }
-  }
-  
+}

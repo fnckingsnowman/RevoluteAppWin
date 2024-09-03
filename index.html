@@ -12,9 +12,8 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="user-account">
-                User account
-            </div>
+            <h1 class="title">Connect your Revolute</h1>
+            <button onclick="showBLEDevices()">BLE connect</button>
             <div class="search-bar">
                 <input type="text" placeholder="Search bar">
             </div>
@@ -37,8 +36,17 @@
                 <br>
                 <button onclick="startHook(1)">Start Hook</button>
                 <button onclick="stopHook(1)">Stop Hook</button>
+                
+            </div>
+                <div id="bleDevices" class="tab-content">
+                <div class="header">Available BLE Devices</div>
+                <button id="startScanBtn">Start BLE Scan</button>
+                <button id="stopScanBtn">Stop BLE Scan</button>
+                <div id="results"></div>
             </div>
         </div>
+
+        
     </div>
     <script src="renderer.js"></script>
     <script src="script.js"></script>

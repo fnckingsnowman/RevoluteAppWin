@@ -83,6 +83,11 @@ function stopHook(tabNumber) {
     window.electronAPI.stopHook();
 }
 
+let scannedDevices = {};
+function showBLEDevices() {
+    showTab('bleDevices');
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
     showTab('tab1');
