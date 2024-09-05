@@ -88,6 +88,14 @@ function showBLEDevices() {
     showTab('bleDevices');
 }
 
+function scanBLE(){
+    window.electronAPI.startScan();
+}
+
+function stopScanBLE(){
+    window.electronAPI.stopScan();
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
     showTab('tab1');
